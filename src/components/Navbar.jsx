@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <div className="flex-shrink-0">
           <a href="#" className="font-orbitron font-bold text-2xl tracking-widest text-[var(--color-text-main)] relative group">
-            HARSH<span className="text-[var(--color-cyan-primary)]">.</span>
+            HARSH DEPANI<span className="text-[var(--color-cyan-primary)]">.</span>
             <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[var(--color-cyan-primary)] transition-all duration-300 group-hover:w-full glow-cyan"></span>
           </a>
         </div>
