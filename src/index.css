@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Orbitron:wght@400;500;700;900&family=Sora:wght@400;600&display=swap');
+@import "tailwindcss";
+
+/* 
+Theme: "Tech Futurism" (Light & Dark Modes)
+*/
+
+@layer base {
+  :root {
+    --bg-primary: #F8FAFC; 
+    --bg-secondary: #E2E8F0; 
+    --bg-tertiary: #CBD5E1; 
+    --text-primary: #0F172A; 
+    --text-secondary: #475569; 
+    --border-color: rgba(0, 0, 0, 0.05);
+    --bg-glass: rgba(255, 255, 255, 0.6);
+    
+    --cyan-theme: #0284C7; /* Darker cyan for light visibility */
+    --orange-theme: #EA580C; /* Darker orange for light visibility */
+  }
+
+  html.dark {
+    --bg-primary: #0A0A0F;
+    --bg-secondary: #111118;
+    --bg-tertiary: #1f2937;
+    --text-primary: #E8E8E8;
+    --text-secondary: #9ca3af;
+    --border-color: rgba(0, 245, 255, 0.1);
+    --bg-glass: rgba(10, 10, 15, 0.6);
+    
+    --cyan-theme: #00F5FF;
+    --orange-theme: #FF6B00;
+  }
+}
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  
+  --color-text-main: var(--text-primary);
+  --color-text-muted: var(--text-secondary);
+  --color-border-main: var(--border-color);
+  
+  /* Legacy mappings to prevent breaking existing classes before refactor */
+  --color-dark-bg: var(--bg-primary);
+  --color-cyan-primary: var(--cyan-theme);
+  --color-orange-secondary: var(--orange-theme);
+  --color-text-light: var(--text-primary);
+  
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-sans: "DM Sans", "Sora", sans-serif;
+}
+
+@layer base {
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-orbitron);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+@layer components {
+  /* Glitch Text Effect Base */
+  .glitch-text {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch-text::before {
+    left: 2px;
+    text-shadow: -1px 0 var(--color-cyan-primary);
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+  }
+  
+  .glitch-text::after {
+    left: -2px;
+    text-shadow: -1px 0 var(--color-orange-secondary);
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim 2.5s infinite linear alternate-reverse;
+  }
+
+  /* Neon Glow Utilities */
+  .glow-cyan {
+    box-shadow: 0 0 10px rgba(0, 245, 255, 0.5), 0 0 20px rgba(0, 245, 255, 0.3);
+  }
+  
+  .glow-orange {
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.5), 0 0 20px rgba(255, 107, 0, 0.3);
+  }
+
+  /* Glassmorphism Panel */
+  .glass-panel {
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+  }
+}
+
+@keyframes glitch-anim {
+  0% { clip: rect(10px, 9999px, 86px, 0); }
+  20% { clip: rect(32px, 9999px, 6px, 0); }
+  40% { clip: rect(65px, 9999px, 34px, 0); }
+  60% { clip: rect(14px, 9999px, 94px, 0); }
+  80% { clip: rect(85px, 9999px, 21px, 0); }
+  100% { clip: rect(53px, 9999px, 76px, 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip: rect(65px, 9999px, 100px, 0); }
+  20% { clip: rect(2px, 9999px, 81px, 0); }
+  40% { clip: rect(54px, 9999px, 11px, 0); }
+  60% { clip: rect(93px, 9999px, 54px, 0); }
+  80% { clip: rect(21px, 9999px, 72px, 0); }
+  100% { clip: rect(89px, 9999px, 39px, 0); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 255, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan-primary);
+}
+
+/* Easter Egg Gym Mode Theme overriding variables */
+body.gym-mode {
+  --color-cyan-primary: #FF6B00; /* Swap cyan for orange dominant */
+  --color-orange-secondary: #00F5FF;
+}
