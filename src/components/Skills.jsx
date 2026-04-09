@@ -4,14 +4,14 @@ import { FaReact, FaNodeJs, FaGitAlt, FaPython, FaHtml5, FaCss3Alt, FaGithub, Fa
 import { SiTailwindcss, SiExpress, SiMongodb, SiCplusplus, SiJavascript, SiMysql, SiMui, SiRedux, SiC } from 'react-icons/si';
 
 const skillsData = [
-  { name: 'HTML', icon: FaHtml5, color: '#E34F26' },
-  { name: 'CSS', icon: FaCss3Alt, color: '#1572B6' },
-  { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
+  { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+  { name: 'Express', icon: SiExpress, color: '#DDDDDD' },
   { name: 'ReactJs', icon: FaReact, color: '#61DAFB' },
   { name: 'NodeJS', icon: FaNodeJs, color: '#339933' },
-  { name: 'Express', icon: SiExpress, color: '#DDDDDD' },
-  { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+  { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
   { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
+  { name: 'HTML', icon: FaHtml5, color: '#E34F26' },
+  { name: 'CSS', icon: FaCss3Alt, color: '#1572B6' },
   { name: 'Git', icon: FaGitAlt, color: '#F05032' },
   { name: 'GitHub', icon: FaGithub, color: '#FFFFFF' },
   { name: 'Bootstrap', icon: FaBootstrap, color: '#7952B3' },
