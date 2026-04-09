@@ -19,8 +19,8 @@ const skillsData = [
   { name: 'MUI', icon: SiMui, color: '#007FFF' },
   { name: 'Redux', icon: SiRedux, color: '#764ABC' },
   { name: 'C', icon: SiC, color: '#A8B9CC' },
-  { name: 'C++', icon: SiCplusplus, color: '#00599C' },
-  { name: 'Python', icon: FaPython, color: '#3776AB' },
+  // { name: 'C++', icon: SiCplusplus, color: '#00599C' },
+  // { name: 'Python', icon: FaPython, color: '#3776AB' },
 ];
 
 const Hexagon = ({ skill, index }) => {
