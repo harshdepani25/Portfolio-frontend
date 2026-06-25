@@ -15,7 +15,7 @@ const Navbar = () => {
           animate={{ x: [0, -1000] }}
           transition={{ repeat: Infinity, ease: 'linear', duration: 20 }}
         >
-          {Array(10).fill("Currently building: 🚀 Open to work & ready to collaborate — let's build something amazing together!     |   ").join("")}
+          {Array(10).fill("Currently : 🚀 Open to work & ready to collaborate — let's build something amazing together!     |   ").join("")}
         </motion.div>
       </div>
 
