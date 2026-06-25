@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   // Typing Effect
-  const words = ["Full Stack Developer.", "Robotics Enthusiast.", "Problem Solver."];
+  const words = ["Full Stack Developer.", "AI Enthusiast.", "Problem Solver."];
   const [displayText, setDisplayText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
