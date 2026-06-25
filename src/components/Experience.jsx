@@ -49,7 +49,7 @@ const TimelineItem = ({ data, index }) => {
 const Experience = () => {
   const timelineData = [
     {
-      year: "Dec-2025 Apr-2026",
+      year: "Dec-2025 To Apr-2026",
       title: "LMS Platform",
       subtitle: "Learning Management System (MERN)",
       description: "Successfully built a full-featured Learning Management System handling user authentication, dynamic course creation, and student progress tracking.",
@@ -76,7 +76,7 @@ const Experience = () => {
     },
 
     {
-      year: "2025",
+      year: "Nov-2025 To Dec-2025",
       title: "Movie Booking System",
       subtitle: "Frontend Application",
       description: "Developed a functional movie ticket booking web application with robust seat selection and automated mock booking flow.",
