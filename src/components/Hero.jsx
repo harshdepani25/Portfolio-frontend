@@ -115,7 +115,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
         >
-          Hi, I'm Harsh Depani — a 17-year-old full-stack developer and robotics enthusiast pursuing a Diploma in Computer Engineering.         </motion.p>
+          Hi, I'm Harsh Depani — a 17-year-old full-stack developer and AI enthusiast pursuing a Diploma in Computer Engineering.         </motion.p>
       </motion.div>
 
       {/* Scroll indicator */}
