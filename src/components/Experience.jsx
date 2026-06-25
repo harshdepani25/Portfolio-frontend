@@ -49,27 +49,27 @@ const TimelineItem = ({ data, index }) => {
 const Experience = () => {
   const timelineData = [
     {
-      year: "2026-Present",
+      year: "Dec-2025 Apr-2026",
       title: "LMS Platform",
       subtitle: "Learning Management System (MERN)",
       description: "Successfully built a full-featured Learning Management System handling user authentication, dynamic course creation, and student progress tracking.",
     },
     {
-      year: "2026",
+      year: "Mar-2026",
       title: "Personal Portfolio",
       subtitle: "Full-Stack Web Innovation",
       description: "Designed and engineered this dynamic portfolio featuring Light/Dark mode transitions, Framer Motion animations, and a responsive glassmorphism UI.",
     },
 
     {
-      year: "2025-26",
+      year: "Sep-2025 To Mar-26",
       title: "E-Yantra, IIT Bombay",
       subtitle: "Prestigious national robotics olympiad",
       description: "Successfully completed two stages as part of a 4-member team in one of the most prestigious robotics competitions in India.",
     },
 
     {
-      year: "2025-26",
+      year: "Oct-2025 To Dec-25",
       title: "Robofest 5.0",
       subtitle: "National robotics competition",
       description: "Cleared Level 1 & built a working POC robot with a 4-member team. Earned patent recognition from GUJCOST for the robot's design.",
@@ -82,7 +82,7 @@ const Experience = () => {
       description: "Developed a functional movie ticket booking web application with robust seat selection and automated mock booking flow.",
     },
     {
-      year: "2024-Present",
+      year: "Aug-2024-Present",
       title: "Diploma in Computer Engineering",
       subtitle: "Specializing in Full-Stack Web Development",
       description: "Currently pursuing a Diploma in Computer Engineering. Moving from zero to building complete, production-ready web applications primarily using the MERN stack.",
