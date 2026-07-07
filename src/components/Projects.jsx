@@ -75,7 +75,7 @@ const Projects = () => {
       tech: ["In Progress","MongoDB", "Express", "React", "Node.js"],
       image: "/images/LMS Preview.png",
       github: "https://github.com/harshdepani25/LMSFrontend.git",
-      demo: "https://lms-frontend-ten-steel.vercel.app/",
+      demo: "https://lms-harshdepani.vercel.app",
     },
     {
       title: "Personal Portfolio",
