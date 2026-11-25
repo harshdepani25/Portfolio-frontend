@@ -98,7 +98,7 @@ const About = () => {
               </p>
               
               <p>
-                Outside of web development, I'm passionate about robotics. I've competed in national-level robotics competitions, including Robofest 5.0 and e-Yantra by IIT Bombay, and my team's robot design earned a patent recognition from GUJCOST.
+                Outside of web development, I'm passionate about robotics. I've competed in national-level robotics competitions, including Robofest 5.0, Robofest 6.0, and e-Yantra by IIT Bombay, and my team's robot design earned a patent recognition from GUJCOST.
               </p>
 
               <p className="italic border-l-2 border-[var(--color-cyan-primary)] pl-4 text-[var(--color-text-main)]">
@@ -122,7 +122,7 @@ const About = () => {
                 <span className="text-xs text-[var(--color-text-muted)] font-orbitron uppercase mt-2">Projects built</span>
               </div>
               <div className="flex flex-col">
-                <Counter from={0} to={2} duration={3} />
+                <Counter from={0} to={3} duration={3} />
                 <span className="text-xs text-[var(--color-text-muted)] font-orbitron uppercase mt-2">National competitions</span>
               </div>
             </div>

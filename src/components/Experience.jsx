@@ -49,6 +49,24 @@ const TimelineItem = ({ data, index }) => {
 const Experience = () => {
   const timelineData = [
     {
+      year: "2026",
+      title: "Dwarkesh Travels",
+      subtitle: "Bus Booking & Fleet Management (MERN)",
+      description: "Architected and deployed a production bus reservation platform featuring live seat selection, dynamic route scheduling, passenger management, and admin dashboard.",
+    },
+    {
+      year: "2026",
+      title: "Radhe Krishna Diamond",
+      subtitle: "Custom Accounting Software (MERN)",
+      description: "Engineered a custom financial accounting and stock inventory platform for diamond trading businesses, featuring automated ledger tracking and financial reporting.",
+    },
+    {
+      year: "2026",
+      title: "Robofest 6.0",
+      subtitle: "National Robotics Competition (GUJCOST)",
+      description: "Participating in Robofest 6.0, designing next-generation autonomous robotics systems and advancing hardware-software integration.",
+    },
+    {
       year: "Dec-2025 To Apr-2026",
       title: "LMS Platform",
       subtitle: "Learning Management System (MERN)",
@@ -60,21 +78,18 @@ const Experience = () => {
       subtitle: "Full-Stack Web Innovation",
       description: "Designed and engineered this dynamic portfolio featuring Light/Dark mode transitions, Framer Motion animations, and a responsive glassmorphism UI.",
     },
-
     {
-      year: "Sep-2025 To Mar-26",
-      title: "E-Yantra, IIT Bombay",
-      subtitle: "Prestigious national robotics olympiad",
-      description: "Successfully completed two stages as part of a 4-member team in one of the most prestigious robotics competitions in India.",
+      year: "Sep-2025 To Mar-2026",
+      title: "e-Yantra, IIT Bombay",
+      subtitle: "Prestigious National Robotics Olympiad",
+      description: "Successfully cleared and completed two stages as part of a 4-member team in one of the most prestigious robotics competitions in India hosted by IIT Bombay.",
     },
-
     {
-      year: "Oct-2025 To Dec-25",
+      year: "Oct-2025 To Dec-2025",
       title: "Robofest 5.0",
-      subtitle: "National robotics competition",
+      subtitle: "National Robotics Competition (GUJCOST)",
       description: "Cleared Level 1 & built a working POC robot with a 4-member team. Earned patent recognition from GUJCOST for the robot's design.",
     },
-
     {
       year: "Nov-2025 To Dec-2025",
       title: "Movie Booking System",
@@ -82,7 +97,7 @@ const Experience = () => {
       description: "Developed a functional movie ticket booking web application with robust seat selection and automated mock booking flow.",
     },
     {
-      year: "Aug-2024-Present",
+      year: "Aug-2024 - Present",
       title: "Diploma in Computer Engineering",
       subtitle: "Specializing in Full-Stack Web Development",
       description: "Currently pursuing a Diploma in Computer Engineering. Moving from zero to building complete, production-ready web applications primarily using the MERN stack.",
