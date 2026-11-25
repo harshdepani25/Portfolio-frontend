@@ -89,15 +89,26 @@ const About = () => {
 
             <h3 className="text-3xl font-sans font-bold text-[var(--color-text-main)]">
               Developer & Innovator <br/>
-              <span className="text-xl text-[var(--color-orange-secondary)] font-normal mt-2 block">17 years old · Diploma in Computer Engineering</span>
+              <span className="text-xl text-[var(--color-orange-secondary)] font-normal mt-2 block">Full-Stack Web Developer & Robotics Enthusiast</span>
             </h3>
             
             <div className="text-[var(--color-text-muted)] font-sans leading-relaxed text-lg space-y-4">
-              <p>I'm a full-stack web developer who builds end-to-end web applications — from databases to polished user interfaces — primarily using MongoDB, Express.js, React, and Node.js.</p>
+              <p>
+                I'm a full-stack web developer who builds end-to-end applications, from databases to polished user interfaces, using MongoDB, Express.js, React, and Node.js.
+              </p>
               
-              <p>Outside of web development, I'm deeply passionate about robotics. I competed in Robofest 5.0, India's biggest robotics competition, where my team cleared Level 1, and had our robot design idea recognized with a patent by GUJCOST. I've also participated in e-Yantra by IIT Bombay — one of India's most prestigious robotics olympiads — where we successfully completed two stages.</p>
+              <p>
+                Outside of web development, I'm passionate about robotics. I've competed in national-level robotics competitions, including Robofest 5.0 and e-Yantra by IIT Bombay, and my team's robot design earned a patent recognition from GUJCOST.
+              </p>
 
-              <p className="italic border-l-2 border-[var(--color-cyan-primary)] pl-4">"I'm only 17, but I believe in building real things — not just learning concepts."</p>
+              <p className="italic border-l-2 border-[var(--color-cyan-primary)] pl-4 text-[var(--color-text-main)]">
+                "I believe in building real things, not just learning concepts."
+              </p>
+
+              <p className="pt-2">
+                Explore my <a href="#projects" className="text-[var(--color-cyan-primary)] hover:underline">projects</a> below, or{' '}
+                <a href="#contact" className="text-[var(--color-cyan-primary)] hover:underline">get in touch</a> if you'd like to work together.
+              </p>
             </div>
 
             {/* Quick Stats */}
@@ -107,7 +118,7 @@ const About = () => {
                 <span className="text-xs text-[var(--color-text-muted)] font-orbitron uppercase mt-2">Skills</span>
               </div>
               <div className="flex flex-col">
-                <Counter from={0} to={3} duration={2.5} />
+                <Counter from={0} to={5} duration={2.5} />
                 <span className="text-xs text-[var(--color-text-muted)] font-orbitron uppercase mt-2">Projects built</span>
               </div>
               <div className="flex flex-col">

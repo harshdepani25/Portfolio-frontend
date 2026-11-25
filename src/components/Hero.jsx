@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   // Typing Effect
-  const words = ["Full Stack Developer.", "AI Enthusiast.", "Problem Solver."];
+  const words = ["Full Stack Developer.", "MERN Stack Specialist.", "Robotics Innovator."];
   const [displayText, setDisplayText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -115,7 +115,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
         >
-          Hi, I'm Harsh Depani — a 17-year-old full-stack developer and AI enthusiast pursuing a Diploma in Computer Engineering.         </motion.p>
+          Full-stack web developer building end-to-end applications with MongoDB, Express.js, React, and Node.js — and a national-level robotics innovator dedicated to building real things.
+        </motion.p>
       </motion.div>
 
       {/* Scroll indicator */}

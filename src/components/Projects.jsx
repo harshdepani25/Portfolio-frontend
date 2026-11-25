@@ -14,7 +14,7 @@ const ProjectCard = ({ project, index }) => (
     <div className={`relative overflow-hidden ${project.featured ? 'md:w-3/5 h-64 md:h-auto' : 'w-full h-48'}`}>
       <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg-secondary)] via-transparent to-transparent z-10 opacity-80 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none"></div>
       <div className="absolute inset-0 bg-[var(--color-cyan-primary)] mix-blend-overlay z-10 opacity-20 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"></div>
-      
+
       {/* Image / Glitch Effect */}
       <div className="w-full h-full bg-[var(--color-bg-secondary)] border-b md:border-b-0 md:border-r border-[var(--color-cyan-primary)]/20 flex items-center justify-center relative overflow-hidden inner-glitch">
         {project.image ? (
@@ -27,14 +27,26 @@ const ProjectCard = ({ project, index }) => (
           </>
         )}
       </div>
-      
+
       {/* Hover Overlay Buttons */}
       <div className="absolute inset-0 z-20 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 backdrop-blur-sm bg-[var(--color-bg-secondary)]/40">
-        <a href={project.github} className="p-4 rounded-full bg-[var(--color-bg-primary)] border border-[var(--color-cyan-primary)] text-[var(--color-cyan-primary)] hover:bg-[var(--color-cyan-primary)] hover:text-[var(--color-bg-primary)] transition-all transform hover:scale-110 hover:shadow-[0_0_15px_rgba(0,245,255,0.6)]">
-          <FaGithub size={24} />
-        </a>
+        {project.github && project.github !== '#' && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-full bg-[var(--color-bg-primary)] border border-[var(--color-cyan-primary)] text-[var(--color-cyan-primary)] hover:bg-[var(--color-cyan-primary)] hover:text-[var(--color-bg-primary)] transition-all transform hover:scale-110 hover:shadow-[0_0_15px_rgba(0,245,255,0.6)]"
+          >
+            <FaGithub size={24} />
+          </a>
+        )}
         {project.demo && (
-          <a href={project.demo} className="p-4 rounded-full bg-[var(--color-bg-primary)] border border-[var(--color-orange-secondary)] text-[var(--color-orange-secondary)] hover:bg-[var(--color-orange-secondary)] hover:text-[var(--color-bg-primary)] transition-all transform hover:scale-110 hover:shadow-[0_0_15px_rgba(255,107,0,0.6)]">
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-full bg-[var(--color-bg-primary)] border border-[var(--color-orange-secondary)] text-[var(--color-orange-secondary)] hover:bg-[var(--color-orange-secondary)] hover:text-[var(--color-bg-primary)] transition-all transform hover:scale-110 hover:shadow-[0_0_15px_rgba(255,107,0,0.6)]"
+          >
             <FaLink size={24} />
           </a>
         )}
@@ -68,36 +80,49 @@ const ProjectCard = ({ project, index }) => (
 
 const Projects = () => {
   const projectsData = [
-    
     {
-      title: "LMS Platform",
-      description: "A full-featured Learning Management System with courses, users & progress tracking.",
-      tech: ["In Progress","MongoDB", "Express", "React", "Node.js"],
+      title: "Dwarkesh Travels - Bus Booking & Fleet Management",
+      description: "A production-ready bus reservation and fleet operations platform built for bus operators, featuring interactive seat selection, route scheduling, dynamic fare management, and instant booking confirmation.",
+      tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+      image: "/images/Dwarkeshbus.png",
+      demo: "https://dwarkeshbus.in",
+      featured: true,
+    },
+    {
+      title: "Radhe Krishna Diamond - Accounting Software",
+      description: "A custom financial accounting and inventory management software engineered for diamond businesses, streamlining ledger tracking, client account balances, transaction logs, and real-time reporting.",
+      tech: ["MongoDB", "Express", "React", "Node.js"],
+      image: "/images/Radhe Krishna.png",
+      demo: "https://radhekrishana-diamond.vercel.app",
+    },
+    {
+      title: "LMS Platform - Elevelt Knowlwdge",
+      description: "A full-featured Learning Management System with course catalogs, student progress tracking, and interactive learning dashboards.",
+      tech: ["In Progress", "MongoDB", "Express", "React", "Node.js"],
       image: "/images/LMS Preview.png",
       github: "https://github.com/harshdepani25/LMSFrontend.git",
       demo: "https://lms-harshdepani.vercel.app",
     },
     {
-      title: "Personal Portfolio",
-      description: "This very website — currently in development. Showcasing my work and story.",
-      tech: ["MongoDB", "Express", "React", "Node.js"],
-      github: "#",
-      image: "/images/Portfolio-Preview.png",
-    },
-    {
       title: "Movie Booking System",
-      description: "A fully functional ticket booking app with seat selection and booking flow.",
+      description: "A fully functional ticket booking application featuring movie schedules, seat layout selection, and intuitive reservation workflows.",
       tech: ["HTML", "CSS", "JS", "Bootstrap", "JSON Server"],
       github: "https://github.com/harshdepani25/Project-Cinema-Booking-.git",
       image: "/images/Movie-Booking Preview.png",
-      featured: true,
+    },
+    {
+      title: "Personal Portfolio",
+      description: "A cyberpunk/futuristic developer portfolio showcasing interactive UI animations, project showcases, and integrated backend messaging.",
+      tech: ["MongoDB", "Express", "React", "Node.js", "Framer Motion"],
+      github: "https://github.com/harshdepani25/Portfolio-frontend.git",
+      image: "/images/Portfolio-Preview.png",
     },
   ];
 
   return (
     <section id="projects" className="py-24 bg-[var(--color-bg-primary)] transition-colors duration-500 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -116,8 +141,8 @@ const Projects = () => {
             <ProjectCard key={project.title} project={project} index={index} />
           ))}
         </div>
-        
-        <motion.div 
+
+        <motion.div
           className="text-center mt-12 hover:scale-105 transition-transform"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
