@@ -73,22 +73,22 @@ const Experience = () => {
       description: "Participating in Robofest 6.0, designing next-generation autonomous robotics systems and advancing hardware-software integration.",
     },
     {
-      year: "Dec-2025 To Apr-2026",
-      title: "LMS Platform",
-      subtitle: "Learning Management System (MERN)",
-      description: "Successfully built a full-featured Learning Management System handling user authentication, dynamic course creation, and student progress tracking.",
-    },
-    {
       year: "Mar-2026",
       title: "Personal Portfolio",
       subtitle: "Full-Stack Web Innovation",
       description: "Designed and engineered this dynamic portfolio featuring Light/Dark mode transitions, Framer Motion animations, and a responsive glassmorphism UI.",
     },
     {
-      year: "Sep-2025 To Mar-2026",
-      title: "e-Yantra, IIT Bombay",
-      subtitle: "Prestigious National Robotics Olympiad",
-      description: "Successfully cleared and completed two stages as part of a 4-member team in one of the most prestigious robotics competitions in India hosted by IIT Bombay.",
+      year: "Dec-2025 To Apr-2026",
+      title: "LMS Platform",
+      subtitle: "Learning Management System (MERN)",
+      description: "Successfully built a full-featured Learning Management System handling user authentication, dynamic course creation, and student progress tracking.",
+    },
+    {
+      year: "Nov-2025 To Dec-2025",
+      title: "Movie Booking System",
+      subtitle: "Frontend Application",
+      description: "Developed a functional movie ticket booking web application with robust seat selection and automated mock booking flow.",
     },
     {
       year: "Oct-2025 To Dec-2025",
@@ -97,10 +97,10 @@ const Experience = () => {
       description: "Cleared Level 1 & built a working POC robot with a 4-member team. Earned patent recognition from GUJCOST for the robot's design.",
     },
     {
-      year: "Nov-2025 To Dec-2025",
-      title: "Movie Booking System",
-      subtitle: "Frontend Application",
-      description: "Developed a functional movie ticket booking web application with robust seat selection and automated mock booking flow.",
+      year: "Sep-2025 To Mar-2026",
+      title: "e-Yantra, IIT Bombay",
+      subtitle: "Prestigious National Robotics Olympiad",
+      description: "Successfully cleared and completed two stages as part of a 4-member team in one of the most prestigious robotics competitions in India hosted by IIT Bombay.",
     },
     {
       year: "Aug-2024 - Present",
