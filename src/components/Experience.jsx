@@ -49,19 +49,25 @@ const TimelineItem = ({ data, index }) => {
 const Experience = () => {
   const timelineData = [
     {
-      year: "2026",
+      year: "Sept-2026",
       title: "Dwarkesh Travels",
       subtitle: "Bus Booking & Fleet Management (MERN)",
       description: "Architected and deployed a production bus reservation platform featuring live seat selection, dynamic route scheduling, passenger management, and admin dashboard.",
     },
     {
-      year: "2026",
+      year: "Aug-2026",
       title: "Radhe Krishna Diamond",
       subtitle: "Custom Accounting Software (MERN)",
       description: "Engineered a custom financial accounting and stock inventory platform for diamond trading businesses, featuring automated ledger tracking and financial reporting.",
     },
     {
-      year: "2026",
+      year: "July-2026 To Present",
+      title: "e-Yantra, IIT Bombay",
+      subtitle: "Prestigious National Robotics Olympiad",
+      description: "Selected and currently competing in the prestigious national robotics competition by IIT Bombay, engineering complex embedded systems and robotic solutions.",
+    },
+    {
+      year: "July-2026 To Present",
       title: "Robofest 6.0",
       subtitle: "National Robotics Competition (GUJCOST)",
       description: "Participating in Robofest 6.0, designing next-generation autonomous robotics systems and advancing hardware-software integration.",
